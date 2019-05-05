@@ -1,0 +1,30 @@
+{
+  "name": "js-examples",
+  "version": "1.0.0",
+  "description": "Node.js examples",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jenkins-mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdstar/node-js-examples.git"
+  },
+  "engines": {
+    "node": ">=8.16.0"
+  },
+  "author": "wdstar",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/wdstar/node-js-examples/issues"
+  },
+  "homepage": "https://github.com/wdstar/node-js-examples#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.12.0",
+    "eslint-plugin-import": "^2.17.2",
+    "jenkins-mocha": "^7.0.0"
+  }
+}
