@@ -30,8 +30,7 @@ describe('PersonProt classe, old stlyle prototype base class', () => {
     console.log(bob);
     // => PersonProt { _name: 'Bob' }
     // `_name` property is NOT encapsulated!!
-    assert.equal(
-        Object.getOwnPropertyDescriptor(bob, '_name').value, 'Bob');
+    assert.equal(Object.getOwnPropertyDescriptor(bob, '_name').value, 'Bob');
     assert.equal(bob._name, 'Bob');
     assert.equal(bob.getName(), 'Bob');
     // AssertionError: expected [Function] to equal 'Bob'
@@ -48,7 +47,9 @@ describe('PersonCls ES2015 classe', () => {
     // => PersonCls { _name: 'Carol' }
     // `_name` property is NOT encapsulated!!
     assert.equal(
-        Object.getOwnPropertyDescriptor(carol, '_name').value, 'Carol');
+      Object.getOwnPropertyDescriptor(carol, '_name').value,
+      'Carol'
+    );
     assert.equal(carol._name, 'Carol');
     // We should delete get/set from the accessor name.
     assert.equal(carol.getName, 'Carol');

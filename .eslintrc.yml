@@ -2,10 +2,23 @@ env:
   browser: true
   commonjs: true
   es6: true
-extends: google
+  mocha: true
+extends:
+  - eslint:recommended
+  - google
+  - plugin:prettier/recommended  # the last one wins.
 globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
 parserOptions:
   ecmaVersion: 2018
-rules: {}
+rules: {
+  no-console: "off",
+  prettier/prettier: [
+    error,
+    {
+      singleQuote: true,
+      #"trailingComma": "es5"
+    }
+  ]
+}

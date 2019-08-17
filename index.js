@@ -5,5 +5,5 @@ const PersonCls = require('./lib/person').PersonCls;
 
 module.exports = {
   PersonProt,
-  PersonCls,
+  PersonCls
 };

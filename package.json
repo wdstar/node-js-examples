@@ -4,7 +4,7 @@
   "description": "Node.js examples",
   "main": "index.js",
   "scripts": {
-    "pretest": "eslint .",
+    "pretest": "eslint --fix .",
     "test": "jenkins-mocha --recursive"
   },
   "repository": {
@@ -24,7 +24,10 @@
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
     "eslint-config-google": "^0.12.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.17.2",
-    "jenkins-mocha": "^7.0.0"
+    "eslint-plugin-prettier": "^3.1.0",
+    "jenkins-mocha": "^7.0.0",
+    "prettier": "^1.18.2"
   }
 }
