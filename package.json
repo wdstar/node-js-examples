@@ -12,7 +12,7 @@
     "url": "git+https://github.com/wdstar/node-js-examples.git"
   },
   "engines": {
-    "node": ">=8.16.0"
+    "node": ">=14.17.0"
   },
   "author": "wdstar",
   "license": "Apache-2.0",
